@@ -1,0 +1,168 @@
+{
+    "table": "transactions",
+    "description": "Stores loan information on transaction level. The transaction is a lower hierarchical level than the single loan. For example a transaction could be the part of the loan that is secured by some collateral, and another transaction is the part that is unsecured. Or, one transaction could be the drawn part of the loan and anothr transaction is the undrawn part.",
+    "columns": [
+        {
+            "name": "REF_DATE",
+            "type": "DATE",
+            "description": "Reference date (sometimes referred to as 'reporting date'), the last working date of the month in 'DD-MM-YYYY' format.",
+            "nullable": false
+        },
+        {
+            "name": "LOAN_ID",
+            "type": "TEXT",
+            "description": "The indetifier of the loan. Also referred to as 'account number' or 'transaction number'.",
+            "nullable": false
+        },
+        {
+            "name": "PARTNER_ID",
+            "type": "TEXT",
+            "description": "The indetifier/number of the client. The client is ofter referred to as 'borrower', 'customer' or 'partner'.",
+            "nullable": false
+        },
+        {
+            "name": "COLL_ID",
+            "type": "TEXT",
+            "description": "The indetifier of the collateral linked to the loan.",
+            "nullable": true
+        },
+        {
+            "name": "COLL_TYPE",
+            "type": "TEXT",
+            "description": "Shows the type of collateral (if any) linked to the loan.",            
+            "allowed_values": {
+                "RRE": "Residential real estate collateral.",
+                "CRE": "Commercial real estate collateral.",
+                "FIN": "Financial collateral, like cash, shares, bonds.",
+                "UNS": "Means 'unsecured', or a transaction not covered by any collateral."
+            },
+            "nullable": false
+        },
+        {
+            "name": "PROCESSING",
+            "type": "TEXT",
+            "description": "Shows if the exposure to this loan is credit xposure or off-balance exposure",            
+            "allowed_values": {
+                "CE": "credit exposure also refered to as 'utilized' exposure or 'drawn' exposure.",
+                "OB": "off-balance exposure also refered to as 'unutilized' exposure, 'undrawn' exposure or 'free limit'."  
+            },
+            "nullable": false
+        },
+        {
+            "name": "CURRENCY",
+            "type": "TEXT",
+            "description": "The currency in which the loan is denominated.",            
+            "allowed_values": {
+                "BGN": "Bulgarian lev",
+                "EUR": "Euro."  
+            },
+            "nullable": false
+        },
+        {
+            "name": "REM_MTR",
+            "type": "INT",
+            "description": "Remaining maturity of the loan in days. Days between the reference date and the date on which the loan matures.",  
+            "nullable": false
+        },
+        {
+            "name": "ORIG_MTR",
+            "type": "INT",
+            "description": "The original maturity of the loan in days. Days between the date on which the loan was booked and the date on which the loan matures.",  
+            "nullable": false
+        },
+        {
+            "name": "END_DATE",
+            "type": "DATE",
+            "description": "End date of the loan contract. The date at which the loan matures.",  
+            "nullable": false
+        },
+        {
+            "name": "PRODUCT",
+            "type": "TEXT",
+            "description": "Type of product. The available types of products are 'Bond', 'Consumer loan', 'Corporate loan', 'Credit Cards', 'Guarantee', 'Investment Loan', 'Letter of Credit', 'Mortgage loan', 'Multipurpose Line', 'Other loan', and 'Overdraft'. These values are usually used in questions that involve type of product. A product may be referred to with or without capitalization and in cases of multi-word description it may be referred to with only parts of the full description present in the field.",
+            "nullable": false
+        },
+        {
+            "name": "EXPOSURE",
+            "type": "REAL",
+            "description": "The exposure of the transaction. This is the balance, outstanding, or debt in the case when PROCESSING = 'CE'. In case PROCESSING = 'OB' this is the free limit, or how much more could be drawn/utilized.",  
+            "nullable": true
+        },
+        {
+            "name": "EAD",
+            "type": "REAL",
+            "description": "Exposure at Default. This is an evaluation of how much the client will owe the bank in a hypothetical future event of default. For off-balance possitions this is the exposure converted to a credit equivalent value.",  
+            "nullable": true
+        },
+        {
+            "name": "LGD",
+            "type": "REAL",
+            "description": "Loss Given Default. This is a parameter repesenting the fraction of the Expoure at Default that will not be recovered from collateral and workout in the hypothetical event of default.",  
+            "nullable": true
+        },
+        {
+            "name": "EL",
+            "type": "REAL",
+            "description": "Expected Loss. This is the nominal amount of expected loss in the hypothetical event of default. ",  
+            "nullable": true
+        },
+        {
+            "name": "RWA",
+            "type": "REAL",
+            "description": "Risk Weighted Assets.",  
+            "nullable": true
+        }
+    ],    
+    "constraints": {
+        "non_unique": {
+            "columns": ["REF_DATE", "PARTNER_ID"],
+            "description": "Combinations of REF_DATE and PARTNER_ID are not unique."
+        },
+         "non_unique_2": {
+            "columns": ["REF_DATE", "COLL_ID"],
+            "description": "Combinations of REF_DATE and COLL_ID are not unique."
+        }
+    },
+    "relationships": [
+        {
+            "related_table": "customers",
+            "join_type": "composite on (REF_DATE, PARTNER_ID)",
+            "cardinality": "many-to-1 from 'transactions' to 'customers' for a given (REF_DATE, PARTNER_ID)",
+            "columns": [
+                {
+                "local_column": "REF_DATE",
+                "foreign_column": "REF_DATE",
+                "local_role": "part of foreign key",
+                "foregin_role": "part of primary key"
+                },
+                {
+                "local_column": "PARTNER_ID",
+                "foreign_column": "PARTNER_ID",
+                "local_role": "part of foreign key",
+                "foregin_role": "part of primary key"
+                }
+            ],
+            "notes": "For one date there can be several transactions per PARTNET_ID in 'transactions', but in 'customers' the pair ('REF_DATE', 'PARTNER_ID') is unique."
+        },
+{
+            "related_table": "collaterals",
+            "join_type": "composite on (REF_DATE, COLL_ID)",
+            "cardinality": "many-to-1 from 'transactions' to 'collaterals' for a given (REF_DATE, COLL_ID)",
+            "columns": [
+                {
+                "local_column": "REF_DATE",
+                "foreign_column": "REF_DATE",
+                "local_role": "part of foreign key",
+                "foregin_role": "part of primary key"
+                },
+                {
+                "local_column": "COLL_ID",
+                "foreign_column": "COLL_ID",
+                "local_role": "part of foreign key",
+                "foregin_role": "part of primary key"
+                }
+            ]
+        }
+    ]
+
+}

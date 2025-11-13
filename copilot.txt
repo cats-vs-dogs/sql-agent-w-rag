@@ -1,0 +1,72 @@
+Write detailed and full Python code to implement the flow in the attached image in a LangGraph agent for interacting with an SQL database. Important points to consider:
+1. Graph state: Use MessagesState for the state of the graph with any additional keys you might consider necessary. Be very explicit about how the state is updated after every node. 
+2. Tools: Define tools with @tool decorator. Write detailed prompts for the tools usage and tool descriptions. 
+3. RAG for database information: Detail the embedding of the database documentation in a vector store and then the retrieval. Represent the database documentation in JSON format, one file for each table, containing column names and their data types, description, meaning and use, allowed values and value lists. Include relationships with other tables which will be used to create joins. The specification of these relationships should include:
+- table names of related tables;
+- the type of join that should be used - composite depending on several common fields or on one common column only, which is a primary key in one table and foreign key in another;
+- what is the cardinality - 1-to-many or many-to-1;
+- columns that could be used to join tables;
+- what role has the given column in both related tables - a primary/foreign key in case of one-column relation or part of primary/foreign key in case of composite relation: give an example for the following relation between 3 tables: In the table "transaction" I have a column "date" and a column 'customer_id"; for one date I can have several occurrences of one customer_id. In table "customers" I also have a column "date" and a column 'customer_id" but there the customer_id is unique for a given date. Also, table 'customers' has a column 'sector_code" which is not unique and table 'economic_sectors' has a column 'sector_code' which is a primary key. Show me the relationships between these 3 table in their respective JSON file documentation.
+
+
+
+*****************
+
+
+
+
+
+How can I describe the relationship between these tow tables in their json descriptions
+
+
+what if in table B I have another pair, date and account number which have the same relationship with table C, how to indicated both in the table B json description
+
+
+
+the embeddings of the database information should contain description of the meaning of the field, value lists for fields which contain categories for example
+
+
+
+allowed values
+
+When a relationship between two tables is based on a composite key (two or more fields), we need to represent that explicitly in the database documentation and embeddings so the LLM understands how to join correctly.
+what if the relationship between two tables is established using a combination of two fields, both fields present in both tables
+
+
+
+
+relationships
+composite primary and secondary keys
+
+show how each table’s information can be stored in a separate .json file, and then embedded into a vector store for retrieval
+
+this is a SQLite database. how to indicate that some fields allow empty records
+
+
+when defining the relationships in the json, how to show that the columns used to join with another table are foreign or primary keys
+
+
+ok, in the table B I have a field "date" and a field 'customer_id". for one date I can have several occurances of one customer_id. In table A I also have a field "date" and a field 'customer_id" but there the customer_id is unique for a given date. How can I describe the relationship between these tow tables in their json descriptions
+
+	This is a very interesting case because the relationship is not a simple foreign key—it’s a functional dependency with uniqueness constraints that differ between tables. 
+
+
+what if in table B I have another pair, date and account number which have the same relationship with table C, how to indicated both in the table B json description
+
+	When Table B has multiple composite relationships (e.g., one with Table A using date + customer_id and another with Table C using date + account_number), you should represent both relationships explicitly in the JSON under the "relationships" key.
+
+
+if the relationship is not based on a combination of two fields but just one then it is not composite, what is it
+
+	If the relationship is based on just one column, then it is not composite—it’s a simple key relationship.
+
+
+show me an example of the json for both the tables where one field is primary key in one and foreign key in the other
+
+	 two tables in JSON where a column is a primary key in one table and a foreign key in the other:
+
+
+
+
+
+show the retrieval tool to returning JSON chunks and also plain text as alternative.

@@ -1,0 +1,39 @@
+{
+    "table": "sectors",
+    "description": "Stores information about economic sector codes and the description of each code. More than one economic sector code map to the same description.",
+    "columns": [
+                {
+            "name": "NACE",
+            "type": "TEXT",
+            "description": "A four digit code for economic sector classification.",  
+            "nullable": false
+        },
+        {
+            "name": "SECTOR",
+            "type": "TEXT",
+            "description": "The description of the economic sector that corresponds to each code. More than one economic sector code map to the same description. This description is usually used in questions that involve economic sectors. The available full descriptions in thei filed are: 'Agriculture, Forestry', 'Automotive', 'Central Banks', 'Chemicals, Pharma, Healthcare', 'Commercial Banks', 'Construction, Wood', 'Consumer Goods', 'Electronics', 'Energy (Waste Management)', 'Families', 'Food and Beverage', 'Holding', 'Machinery, Metals', 'Media, Paper', 'Other Financial Institutions', 'Other Sovereign', 'Public Sector (excl. Sovereign)', 'Real Estate', 'Services', 'Shipping', 'Telecom, IT', 'Textiles', 'Tourism', and 'Transport, Travel'. A sector may be referred to with or without capitalization and in cases of multi-word description it may be referred to with only parts of the full description present in the field.",  
+            "nullable": false
+        }       
+    ],    
+    "constraints": {
+         "unique": {
+            "columns": ["NACE"],
+            "description": "NACE is unique."
+        }
+    },
+    "relationships": [
+        {
+            "related_table": "customers",
+            "join_type": "single-column on NACE",
+            "cardinality": "1-to-many from 'sectors' to 'customers'",
+            "columns": [
+                {
+                "local_column": "NACE",
+                "foreign_column": "NACE",
+                "local_role": " primary key",
+                "foregin_role": "foreign key"
+                }               
+            ]
+        }        
+    ]
+}

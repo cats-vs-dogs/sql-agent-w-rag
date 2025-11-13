@@ -1,0 +1,52 @@
+{
+    "table": "collaterals",
+    "description": "Stores information about the market value of each collateral.",
+    "columns": [
+        {
+            "name": "REF_DATE",
+            "type": "DATE",
+            "description": "Reference date (sometimes referred to as 'reporting date'), the last working date of the month in 'DD-MM-YYYY' format.",
+            "nullable": false
+        },        
+        {
+            "name": "COLL_ID",
+            "type": "TEXT",
+            "description": "The identifier of the collateral linked to the loan.",
+            "nullable": false
+        },        
+        {
+            "name": "MKT_VALUE",
+            "type": "REAL",
+            "description": "The market value of the collateral.",  
+            "nullable": true
+        }
+    ],    
+    "constraints": {
+        "unique": {
+            "columns": ["REF_DATE", "COLL_ID"],
+            "description": "Combinations of REF_DATE and COLL_ID are unique."
+        }
+    },
+    "relationships": [
+        {
+            "related_table": "transactions",
+            "join_type": "composite on (REF_DATE, COLL_ID)",
+            "cardinality": "1-to-many from 'collaterals' to 'transactions' for a given (REF_DATE, COLL_ID)",
+            "columns": [
+                {
+                "local_column": "REF_DATE",
+                "foreign_column": "REF_DATE",
+                "local_role": "part of primary key",
+                "foregin_role": "part of foreign key"
+                },
+                {
+                "local_column": "COLL_ID",
+                "foreign_column": "COLL_ID",
+                "local_role": "part of primary key",
+                "foregin_role": "part of foreign key"
+                }
+            ]
+        }       
+    ]
+
+}

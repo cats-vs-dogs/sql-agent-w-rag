@@ -1,0 +1,109 @@
+{
+    "table": "customers",
+    "description": "Stores information on customer level",
+    "columns": [
+        {
+            "name": "REF_DATE",
+            "type": "DATE",
+            "description": "Reference date (sometimes referred to as 'reporting date'), the last working date of the month in 'DD-MM-YYYY' format.",
+            "nullable": false
+        },
+        {
+            "name": "PARTNER_ID",
+            "type": "TEXT",
+            "description": "The indetifier/number of the client. The client is ofter referred to as 'borrower', 'customer' or 'partner'.",
+            "nullable": false
+        },
+        {
+            "name": "STATUS",
+            "type": "TEXT",
+            "description": "The status of the client, indicating if their obligations are regularly served",
+            "allowed_values": {
+                "P": "Performing status, the loan is regularly served.",
+                "D": "The client is in default"
+            },
+            "nullable": false
+        },
+        {
+            "name": "PD",
+            "type": "REAL",
+            "description": "Probability of Defualt of the customer.",   
+            "nullable": false
+        },
+        {
+            "name": "COUNTRY",
+            "type": "TEXT",
+            "description": "The country of residence of the customer.",            
+            "allowed_values": {
+                "AT": "Austria",
+                "BG": "Bulgaria",
+                "CA": "Canada",
+                "CY": "Cyprus",
+                "NL": "Netherlands "
+            },
+            "nullable": true
+        },
+        {
+            "name": "RATING_MODEL",
+            "type": "TEXT",
+            "description": "The class of model used to estimate the credit rating and Probability of Default of the client. Rating models with abbreviations 'CBIB10', 'CJHB10', 'CJIB10', 'FJHB10', 'FKBG20', 'FKBG21', 'FKBG30', and 'FKCE11' are used for corporate clients. Rating models with abbreviations 'PA*B10', 'PA*B20', 'PA*B30', 'PAJB10', 'PB*B20', 'PB*B30', and 'PBJB10' are used for individuals. Rating models with abbreviations 'SAJB10', 'SAJB11', 'SB*B10', 'SB*B20', 'SB*B30', 'SBIB10', 'SBIB11', 'SJIB10', 'SJIB11', 'SM*B30', 'SM*B31', 'SMHB10', and 'SMJB10' are used for small business clients. 'KUX 00' identifies an unrated client which reveives a fixed Probability of Default. 'IND 12' is a model that could be applied to any client for assigning an individaul expert based rating. 'AUSF00' is used for identifier of a defualted client without a rating. 'GINS10' is a rating model for insurance companies. 'GMNC22' is a model for multinational corporations.",
+            "nullable": false
+        },
+        {
+            "name": "NACE",
+            "type": "TEXT",
+            "description": "A four digit code for economic sector classification.",  
+            "nullable": false
+        },
+        {
+            "name": "COMPANY_SIZE",
+            "type": "REAL",
+            "description": "The total assets in million euro. For individals this is zero. ",  
+            "nullable": false
+        }       
+    ],    
+    "constraints": {
+        "unique": {
+            "columns": ["REF_DATE", "PARTNER_ID"],
+            "description": "Combinations of REF_DATE and PARTNER_ID are unique."
+        },
+         "non_unique": {
+            "columns": ["NACE"],
+            "description": "NACE is not unique."
+        }
+    },
+    "relationships": [
+        {
+            "related_table": "transactions",
+            "join_type": "composite on (REF_DATE, PARTNER_ID)",
+            "cardinality": "1-to-many from 'customers' to 'transactions' for a given (REF_DATE, PARTNER_ID)",
+            "columns": [
+                {
+                "local_column": "REF_DATE",
+                "foreign_column": "REF_DATE",
+                "local_role": "part of primary key",
+                "foregin_role": "part of foreign key"
+                },
+                {
+                "local_column": "PARTNER_ID",
+                "foreign_column": "PARTNER_ID",
+                "local_role": "part of primary key",
+                "foregin_role": "part of foreign key"
+                }
+            ]
+        },
+        {   
+            "related_table": "sectors",
+            "join_type": "single-column on NACE",
+            "cardinality": "many-to-1 from 'customers' to 'sectors'",
+            "columns": [
+                {
+                "local_column": "NACE",
+                "foreign_column": "NACE",
+                "local_role": "foreign key",
+                "foreign_role": "primary key"
+                }               
+            ]
+        }
+    ]
+}

@@ -1,0 +1,824 @@
+NACE;SECTOR
+0100;Agriculture, Forestry
+0110;Agriculture, Forestry
+0111;Agriculture, Forestry
+0112;Agriculture, Forestry
+0113;Agriculture, Forestry
+0114;Agriculture, Forestry
+0115;Agriculture, Forestry
+0116;Agriculture, Forestry
+0119;Agriculture, Forestry
+0120;Agriculture, Forestry
+0121;Agriculture, Forestry
+0122;Agriculture, Forestry
+0123;Agriculture, Forestry
+0124;Agriculture, Forestry
+0125;Agriculture, Forestry
+0126;Agriculture, Forestry
+0127;Agriculture, Forestry
+0128;Agriculture, Forestry
+0129;Agriculture, Forestry
+0130;Agriculture, Forestry
+0140;Agriculture, Forestry
+0141;Agriculture, Forestry
+0142;Agriculture, Forestry
+0143;Agriculture, Forestry
+0144;Agriculture, Forestry
+0145;Agriculture, Forestry
+0146;Agriculture, Forestry
+0147;Agriculture, Forestry
+0149;Agriculture, Forestry
+0150;Agriculture, Forestry
+0160;Agriculture, Forestry
+0161;Agriculture, Forestry
+0162;Agriculture, Forestry
+0163;Agriculture, Forestry
+0164;Agriculture, Forestry
+0170;Agriculture, Forestry
+0200;Agriculture, Forestry
+0210;Agriculture, Forestry
+0220;Agriculture, Forestry
+0230;Agriculture, Forestry
+0240;Agriculture, Forestry
+0300;Agriculture, Forestry
+0310;Agriculture, Forestry
+0311;Agriculture, Forestry
+0312;Agriculture, Forestry
+0320;Agriculture, Forestry
+0321;Agriculture, Forestry
+0322;Agriculture, Forestry
+0500;Energy (Waste Management)
+0510;Energy (Waste Management)
+0520;Energy (Waste Management)
+0600;Energy (Waste Management)
+0610;Energy (Waste Management)
+0620;Energy (Waste Management)
+0700;Machinery, Metals
+0710;Machinery, Metals
+0720;Machinery, Metals
+0721;Energy (Waste Management)
+0729;Machinery, Metals
+0800;Construction, Wood
+0810;Construction, Wood
+0811;Construction, Wood
+0812;Construction, Wood
+0890;Energy (Waste Management)
+0891;Chemicals, Pharma, Healthcare
+0892;Energy (Waste Management)
+0893;Construction, Wood
+0899;Construction, Wood
+0900;Energy (Waste Management)
+0910;Energy (Waste Management)
+0990;Construction, Wood
+1000;Food and Beverage
+1010;Food and Beverage
+1011;Food and Beverage
+1012;Food and Beverage
+1013;Food and Beverage
+1020;Food and Beverage
+1030;Food and Beverage
+1031;Food and Beverage
+1032;Food and Beverage
+1039;Food and Beverage
+1040;Food and Beverage
+1041;Food and Beverage
+1042;Food and Beverage
+1050;Food and Beverage
+1051;Food and Beverage
+1052;Food and Beverage
+1060;Agriculture, Forestry
+1061;Agriculture, Forestry
+1062;Agriculture, Forestry
+1070;Food and Beverage
+1071;Food and Beverage
+1072;Food and Beverage
+1073;Food and Beverage
+1080;Food and Beverage
+1081;Food and Beverage
+1082;Food and Beverage
+1083;Food and Beverage
+1084;Food and Beverage
+1085;Food and Beverage
+1086;Food and Beverage
+1089;Food and Beverage
+1090;Food and Beverage
+1091;Food and Beverage
+1092;Food and Beverage
+1100;Food and Beverage
+1101;Food and Beverage
+1102;Food and Beverage
+1103;Food and Beverage
+1104;Food and Beverage
+1105;Food and Beverage
+1106;Food and Beverage
+1107;Food and Beverage
+1200;Consumer Goods
+1300;Textiles
+1310;Textiles
+1320;Textiles
+1330;Textiles
+1390;Textiles
+1391;Textiles
+1392;Textiles
+1393;Textiles
+1394;Textiles
+1395;Textiles
+1396;Textiles
+1399;Textiles
+1400;Textiles
+1410;Textiles
+1411;Textiles
+1412;Textiles
+1413;Textiles
+1414;Textiles
+1419;Textiles
+1420;Textiles
+1430;Textiles
+1431;Textiles
+1439;Textiles
+1500;Textiles
+1510;Textiles
+1511;Textiles
+1512;Consumer Goods
+1520;Consumer Goods
+1600;Construction, Wood
+1610;Construction, Wood
+1620;Construction, Wood
+1621;Construction, Wood
+1622;Construction, Wood
+1623;Construction, Wood
+1624;Construction, Wood
+1629;Construction, Wood
+1700;Media, Paper
+1710;Media, Paper
+1711;Media, Paper
+1712;Media, Paper
+1720;Media, Paper
+1721;Media, Paper
+1722;Chemicals, Pharma, Healthcare
+1723;Media, Paper
+1724;Media, Paper
+1729;Media, Paper
+1800;Media, Paper
+1810;Media, Paper
+1811;Media, Paper
+1812;Media, Paper
+1813;Media, Paper
+1814;Media, Paper
+1820;Media, Paper
+1900;Energy (Waste Management)
+1910;Energy (Waste Management)
+1920;Energy (Waste Management)
+2000;Chemicals, Pharma, Healthcare
+2010;Chemicals, Pharma, Healthcare
+2011;Chemicals, Pharma, Healthcare
+2012;Chemicals, Pharma, Healthcare
+2013;Chemicals, Pharma, Healthcare
+2014;Chemicals, Pharma, Healthcare
+2015;Chemicals, Pharma, Healthcare
+2016;Chemicals, Pharma, Healthcare
+2017;Chemicals, Pharma, Healthcare
+2020;Chemicals, Pharma, Healthcare
+2030;Chemicals, Pharma, Healthcare
+2040;Consumer Goods
+2041;Consumer Goods
+2042;Consumer Goods
+2050;Chemicals, Pharma, Healthcare
+2051;Chemicals, Pharma, Healthcare
+2052;Chemicals, Pharma, Healthcare
+2053;Chemicals, Pharma, Healthcare
+2059;Chemicals, Pharma, Healthcare
+2060;Chemicals, Pharma, Healthcare
+2100;Chemicals, Pharma, Healthcare
+2110;Chemicals, Pharma, Healthcare
+2120;Chemicals, Pharma, Healthcare
+2200;Chemicals, Pharma, Healthcare
+2210;Automotive
+2211;Automotive
+2219;Chemicals, Pharma, Healthcare
+2220;Chemicals, Pharma, Healthcare
+2221;Chemicals, Pharma, Healthcare
+2222;Chemicals, Pharma, Healthcare
+2223;Construction, Wood
+2229;Chemicals, Pharma, Healthcare
+2300;Construction, Wood
+2310;Construction, Wood
+2311;Construction, Wood
+2312;Construction, Wood
+2313;Construction, Wood
+2314;Construction, Wood
+2319;Construction, Wood
+2320;Construction, Wood
+2330;Construction, Wood
+2331;Construction, Wood
+2332;Construction, Wood
+2340;Consumer Goods
+2341;Consumer Goods
+2342;Construction, Wood
+2343;Construction, Wood
+2344;Construction, Wood
+2349;Construction, Wood
+2350;Construction, Wood
+2351;Construction, Wood
+2352;Construction, Wood
+2360;Construction, Wood
+2361;Construction, Wood
+2362;Construction, Wood
+2363;Construction, Wood
+2364;Construction, Wood
+2365;Construction, Wood
+2369;Construction, Wood
+2370;Construction, Wood
+2390;Construction, Wood
+2391;Construction, Wood
+2399;Construction, Wood
+2400;Machinery, Metals
+2410;Machinery, Metals
+2420;Machinery, Metals
+2430;Machinery, Metals
+2431;Machinery, Metals
+2432;Machinery, Metals
+2433;Machinery, Metals
+2434;Machinery, Metals
+2440;Machinery, Metals
+2441;Machinery, Metals
+2442;Machinery, Metals
+2443;Machinery, Metals
+2444;Machinery, Metals
+2445;Machinery, Metals
+2446;Energy (Waste Management)
+2450;Machinery, Metals
+2451;Machinery, Metals
+2452;Machinery, Metals
+2453;Machinery, Metals
+2454;Machinery, Metals
+2500;Machinery, Metals
+2510;Machinery, Metals
+2511;Machinery, Metals
+2512;Machinery, Metals
+2520;Machinery, Metals
+2521;Machinery, Metals
+2529;Machinery, Metals
+2530;Machinery, Metals
+2540;Machinery, Metals
+2550;Machinery, Metals
+2560;Machinery, Metals
+2561;Machinery, Metals
+2562;Machinery, Metals
+2570;Consumer Goods
+2571;Consumer Goods
+2572;Machinery, Metals
+2573;Machinery, Metals
+2590;Machinery, Metals
+2591;Machinery, Metals
+2592;Machinery, Metals
+2593;Machinery, Metals
+2594;Machinery, Metals
+2599;Machinery, Metals
+2600;Electronics
+2610;Electronics
+2611;Electronics
+2612;Electronics
+2620;Telecom, IT
+2630;Electronics
+2640;Telecom, IT
+2650;Electronics
+2651;Electronics
+2652;Consumer Goods
+2660;Chemicals, Pharma, Healthcare
+2670;Consumer Goods
+2680;Electronics
+2700;Electronics
+2710;Electronics
+2711;Electronics
+2712;Electronics
+2720;Electronics
+2730;Electronics
+2731;Electronics
+2732;Electronics
+2733;Construction, Wood
+2740;Consumer Goods
+2750;Consumer Goods
+2751;Consumer Goods
+2752;Machinery, Metals
+2790;Electronics
+2800;Machinery, Metals
+2810;Machinery, Metals
+2811;Machinery, Metals
+2812;Machinery, Metals
+2813;Machinery, Metals
+2814;Machinery, Metals
+2815;Machinery, Metals
+2820;Machinery, Metals
+2821;Machinery, Metals
+2822;Machinery, Metals
+2823;Machinery, Metals
+2824;Machinery, Metals
+2825;Machinery, Metals
+2829;Machinery, Metals
+2830;Machinery, Metals
+2840;Machinery, Metals
+2841;Machinery, Metals
+2849;Machinery, Metals
+2890;Machinery, Metals
+2891;Machinery, Metals
+2892;Machinery, Metals
+2893;Machinery, Metals
+2894;Machinery, Metals
+2895;Machinery, Metals
+2896;Machinery, Metals
+2899;Machinery, Metals
+2900;Automotive
+2910;Automotive
+2920;Automotive
+2930;Automotive
+2931;Automotive
+2932;Automotive
+3000;Transport, Travel
+3010;Shipping
+3011;Shipping
+3012;Shipping
+3020;Transport, Travel
+3030;Transport, Travel
+3040;Machinery, Metals
+3090;Automotive
+3091;Automotive
+3092;Consumer Goods
+3099;Automotive
+3100;Consumer Goods
+3101;Consumer Goods
+3102;Consumer Goods
+3103;Consumer Goods
+3109;Consumer Goods
+3200;Consumer Goods
+3210;Consumer Goods
+3211;Consumer Goods
+3212;Consumer Goods
+3213;Consumer Goods
+3220;Consumer Goods
+3230;Consumer Goods
+3240;Consumer Goods
+3250;Chemicals, Pharma, Healthcare
+3290;Consumer Goods
+3291;Consumer Goods
+3299;Consumer Goods
+3300;Machinery, Metals
+3310;Machinery, Metals
+3311;Machinery, Metals
+3312;Machinery, Metals
+3313;Electronics
+3314;Electronics
+3315;Shipping
+3316;Transport, Travel
+3317;Automotive
+3319;Machinery, Metals
+3320;Machinery, Metals
+3500;Energy (Waste Management)
+3510;Energy (Waste Management)
+3511;Energy (Waste Management)
+3512;Energy (Waste Management)
+3513;Energy (Waste Management)
+3514;Energy (Waste Management)
+3520;Energy (Waste Management)
+3521;Energy (Waste Management)
+3522;Energy (Waste Management)
+3523;Energy (Waste Management)
+3530;Energy (Waste Management)
+3600;Energy (Waste Management)
+3700;Energy (Waste Management)
+3800;Energy (Waste Management)
+3810;Energy (Waste Management)
+3811;Energy (Waste Management)
+3812;Energy (Waste Management)
+3820;Energy (Waste Management)
+3821;Energy (Waste Management)
+3822;Energy (Waste Management)
+3830;Energy (Waste Management)
+3831;Energy (Waste Management)
+3832;Energy (Waste Management)
+3900;Energy (Waste Management)
+4100;Construction, Wood
+4110;Real Estate
+4120;Construction, Wood
+4200;Construction, Wood
+4210;Construction, Wood
+4211;Construction, Wood
+4212;Construction, Wood
+4213;Construction, Wood
+4220;Construction, Wood
+4221;Construction, Wood
+4222;Construction, Wood
+4290;Construction, Wood
+4291;Construction, Wood
+4299;Construction, Wood
+4300;Construction, Wood
+4310;Construction, Wood
+4311;Construction, Wood
+4312;Construction, Wood
+4313;Construction, Wood
+4320;Construction, Wood
+4321;Construction, Wood
+4322;Construction, Wood
+4329;Construction, Wood
+4330;Construction, Wood
+4331;Construction, Wood
+4332;Construction, Wood
+4333;Construction, Wood
+4334;Construction, Wood
+4339;Construction, Wood
+4390;Construction, Wood
+4391;Construction, Wood
+4399;Construction, Wood
+4500;Automotive
+4510;Automotive
+4511;Automotive
+4519;Automotive
+4520;Automotive
+4530;Automotive
+4531;Automotive
+4532;Automotive
+4540;Automotive
+4600;Consumer Goods
+4610;Consumer Goods
+4611;Agriculture, Forestry
+4612;Energy (Waste Management)
+4613;Construction, Wood
+4614;Machinery, Metals
+4615;Consumer Goods
+4616;Textiles
+4617;Food and Beverage
+4618;Consumer Goods
+4619;Consumer Goods
+4620;Agriculture, Forestry
+4621;Agriculture, Forestry
+4622;Agriculture, Forestry
+4623;Agriculture, Forestry
+4624;Textiles
+4630;Food and Beverage
+4631;Food and Beverage
+4632;Food and Beverage
+4633;Food and Beverage
+4634;Food and Beverage
+4635;Consumer Goods
+4636;Food and Beverage
+4637;Food and Beverage
+4638;Food and Beverage
+4639;Food and Beverage
+4640;Consumer Goods
+4641;Textiles
+4642;Textiles
+4643;Consumer Goods
+4644;Consumer Goods
+4645;Consumer Goods
+4646;Chemicals, Pharma, Healthcare
+4647;Consumer Goods
+4648;Consumer Goods
+4649;Consumer Goods
+4650;Telecom, IT
+4651;Telecom, IT
+4652;Telecom, IT
+4660;Machinery, Metals
+4661;Machinery, Metals
+4662;Machinery, Metals
+4663;Machinery, Metals
+4664;Machinery, Metals
+4665;Consumer Goods
+4666;Telecom, IT
+4669;Machinery, Metals
+4670;Consumer Goods
+4671;Energy (Waste Management)
+4672;Machinery, Metals
+4673;Construction, Wood
+4674;Machinery, Metals
+4675;Chemicals, Pharma, Healthcare
+4676;Consumer Goods
+4677;Energy (Waste Management)
+4690;Consumer Goods
+4700;Consumer Goods
+4710;Consumer Goods
+4711;Food and Beverage
+4719;Consumer Goods
+4720;Food and Beverage
+4721;Food and Beverage
+4722;Food and Beverage
+4723;Food and Beverage
+4724;Food and Beverage
+4725;Food and Beverage
+4726;Food and Beverage
+4729;Food and Beverage
+4730;Energy (Waste Management)
+4740;Consumer Goods
+4741;Telecom, IT
+4742;Telecom, IT
+4743;Consumer Goods
+4750;Consumer Goods
+4751;Textiles
+4752;Construction, Wood
+4753;Construction, Wood
+4754;Consumer Goods
+4759;Consumer Goods
+4760;Consumer Goods
+4761;Media, Paper
+4762;Media, Paper
+4763;Consumer Goods
+4764;Consumer Goods
+4765;Consumer Goods
+4770;Consumer Goods
+4771;Textiles
+4772;Consumer Goods
+4773;Chemicals, Pharma, Healthcare
+4774;Chemicals, Pharma, Healthcare
+4775;Consumer Goods
+4776;Agriculture, Forestry
+4777;Consumer Goods
+4778;Consumer Goods
+4779;Consumer Goods
+4780;Consumer Goods
+4781;Consumer Goods
+4782;Consumer Goods
+4789;Consumer Goods
+4790;Consumer Goods
+4791;Consumer Goods
+4799;Consumer Goods
+4900;Transport, Travel
+4910;Transport, Travel
+4920;Transport, Travel
+4930;Transport, Travel
+4931;Transport, Travel
+4932;Transport, Travel
+4939;Transport, Travel
+4940;Transport, Travel
+4941;Transport, Travel
+4942;Transport, Travel
+4950;Transport, Travel
+5000;Shipping
+5010;Shipping
+5020;Shipping
+5030;Shipping
+5040;Shipping
+5100;Transport, Travel
+5110;Transport, Travel
+5120;Transport, Travel
+5121;Transport, Travel
+5122;Transport, Travel
+5200;Transport, Travel
+5210;Transport, Travel
+5220;Transport, Travel
+5221;Transport, Travel
+5222;Shipping
+5223;Transport, Travel
+5224;Transport, Travel
+5229;Transport, Travel
+5300;Transport, Travel
+5310;Transport, Travel
+5320;Transport, Travel
+5500;Tourism
+5510;Tourism
+5520;Tourism
+5530;Tourism
+5590;Tourism
+5600;Tourism
+5610;Tourism
+5620;Tourism
+5621;Tourism
+5629;Tourism
+5630;Tourism
+5800;Media, Paper
+5810;Media, Paper
+5811;Media, Paper
+5812;Media, Paper
+5813;Media, Paper
+5814;Media, Paper
+5819;Media, Paper
+5820;Telecom, IT
+5821;Telecom, IT
+5829;Telecom, IT
+5900;Media, Paper
+5910;Media, Paper
+5911;Media, Paper
+5912;Media, Paper
+5913;Media, Paper
+5914;Media, Paper
+5920;Media, Paper
+6000;Media, Paper
+6010;Media, Paper
+6020;Media, Paper
+6100;Telecom, IT
+6110;Telecom, IT
+6120;Telecom, IT
+6130;Telecom, IT
+6190;Telecom, IT
+6200;Telecom, IT
+6201;Telecom, IT
+6202;Telecom, IT
+6203;Telecom, IT
+6209;Telecom, IT
+6300;Telecom, IT
+6310;Telecom, IT
+6311;Telecom, IT
+6312;Telecom, IT
+6390;Services
+6391;Services
+6399;Services
+6400;Other Financial Institutions
+6410;Commercial Banks
+6411;Central Banks
+6419;Commercial Banks
+6420;Holding
+6430;Other Financial Institutions
+6490;Other Financial Institutions
+6491;Other Financial Institutions
+6492;Other Financial Institutions
+6499;Other Financial Institutions
+6500;Other Financial Institutions
+6510;Other Financial Institutions
+6511;Other Financial Institutions
+6512;Other Financial Institutions
+6520;Other Financial Institutions
+6530;Other Financial Institutions
+6600;Other Financial Institutions
+6610;Other Financial Institutions
+6611;Other Financial Institutions
+6612;Other Financial Institutions
+6619;Other Financial Institutions
+6620;Other Financial Institutions
+6621;Other Financial Institutions
+6622;Other Financial Institutions
+6629;Other Financial Institutions
+6630;Other Financial Institutions
+6800;Real Estate
+6810;Real Estate
+6820;Real Estate
+6830;Real Estate
+6831;Real Estate
+6832;Real Estate
+6900;Services
+6910;Services
+6920;Services
+7000;Services
+7010;Holding
+7020;Services
+7021;Services
+7022;Services
+7100;Services
+7110;Services
+7111;Services
+7112;Services
+7120;Services
+7200;Services
+7210;Services
+7211;Services
+7219;Services
+7220;Services
+7300;Services
+7310;Services
+7311;Services
+7312;Media, Paper
+7320;Services
+7400;Services
+7410;Services
+7420;Services
+7430;Services
+7490;Services
+7500;Chemicals, Pharma, Healthcare
+7700;Services
+7710;Automotive
+7711;Automotive
+7712;Transport, Travel
+7720;Consumer Goods
+7721;Consumer Goods
+7722;Services
+7729;Consumer Goods
+7730;Machinery, Metals
+7731;Machinery, Metals
+7732;Construction, Wood
+7733;Services
+7734;Shipping
+7735;Transport, Travel
+7739;Machinery, Metals
+7740;Services
+7800;Services
+7810;Services
+7820;Services
+7830;Services
+7900;Tourism
+7910;Tourism
+7911;Tourism
+7912;Tourism
+7990;Tourism
+8000;Services
+8010;Services
+8020;Services
+8030;Services
+8100;Real Estate
+8110;Real Estate
+8120;Services
+8121;Services
+8122;Services
+8129;Services
+8130;Construction, Wood
+8200;Services
+8210;Services
+8211;Services
+8219;Services
+8220;Services
+8230;Services
+8290;Services
+8291;Services
+8292;Services
+8299;Services
+8400;Other Sovereign
+8410;Other Sovereign
+8411;Public Sector (excl. Sovereign)
+8412;Public Sector (excl. Sovereign)
+8413;Public Sector (excl. Sovereign)
+8420;Public Sector (excl. Sovereign)
+8421;Public Sector (excl. Sovereign)
+8422;Other Sovereign
+8423;Public Sector (excl. Sovereign)
+8424;Public Sector (excl. Sovereign)
+8425;Public Sector (excl. Sovereign)
+8430;Public Sector (excl. Sovereign)
+8500;Services
+8510;Services
+8520;Public Sector (excl. Sovereign)
+8530;Public Sector (excl. Sovereign)
+8531;Services
+8532;Services
+8540;Services
+8541;Services
+8542;Services
+8550;Services
+8551;Services
+8552;Services
+8553;Services
+8559;Services
+8560;Services
+8600;Chemicals, Pharma, Healthcare
+8610;Chemicals, Pharma, Healthcare
+8620;Chemicals, Pharma, Healthcare
+8621;Chemicals, Pharma, Healthcare
+8622;Chemicals, Pharma, Healthcare
+8623;Chemicals, Pharma, Healthcare
+8690;Chemicals, Pharma, Healthcare
+8700;Chemicals, Pharma, Healthcare
+8710;Chemicals, Pharma, Healthcare
+8720;Chemicals, Pharma, Healthcare
+8730;Chemicals, Pharma, Healthcare
+8790;Chemicals, Pharma, Healthcare
+8800;Chemicals, Pharma, Healthcare
+8810;Chemicals, Pharma, Healthcare
+8890;Chemicals, Pharma, Healthcare
+8891;Chemicals, Pharma, Healthcare
+8899;Chemicals, Pharma, Healthcare
+9000;Services
+9001;Services
+9002;Services
+9003;Services
+9004;Services
+9100;Services
+9101;Services
+9102;Services
+9103;Services
+9104;Services
+9200;Services
+9300;Services
+9310;Services
+9311;Services
+9312;Services
+9313;Services
+9319;Services
+9320;Services
+9321;Services
+9329;Services
+9400;Services
+9410;Services
+9411;Services
+9412;Services
+9420;Services
+9490;Services
+9491;Services
+9492;Services
+9499;Services
+9500;Consumer Goods
+9510;Telecom, IT
+9511;Telecom, IT
+9512;Telecom, IT
+9520;Consumer Goods
+9521;Consumer Goods
+9522;Consumer Goods
+9523;Consumer Goods
+9524;Consumer Goods
+9525;Consumer Goods
+9529;Consumer Goods
+9600;Services
+9601;Services
+9602;Services
+9603;Services
+9604;Services
+9609;Services
+9700;Families
+9800;Families
+9810;Families
+9820;Families
+9900;Public Sector (excl. Sovereign)
